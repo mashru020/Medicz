@@ -1765,6 +1765,8 @@ figure {
 /*==============================================*/
 #footer {
   background-image:linear-gradient(to right, rgba(3,59,74,0.8), rgba(3,59,74,0.8)), url(../images/home-page/footer/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .footer-main {
   padding: 150px 0 80px;
@@ -1947,6 +1949,13 @@ html[dir=rtl] .newsletter .subscribe-btn {
   #services {
       background-position-y: -54px;
   }
+  /*----------  about --> timeline  -------*/
+  #timeline .timeline-nav-wrapper {
+      transform: translateY(-130px);
+  }
+  #timeline .bg-layer {
+      display: none;
+  }
 }
 
 @media screen and ( max-width: 991px ) {
@@ -1995,6 +2004,15 @@ html[dir=rtl] .newsletter .subscribe-btn {
   #footer .social-links a {
       margin:0 7px;
   }
+  /*----------  about --> timeline  -------*/
+  #timeline .timeline-nav-wrapper {
+      transform: translateY(-335px);
+  }
+  #timeline .slick-dots {
+      bottom:initial;
+      top: 40px;
+      right: 0;
+  }
 }
 
 @media screen and ( max-width: 767px ) {
@@ -2025,6 +2043,9 @@ html[dir=rtl] .newsletter .subscribe-btn {
   }
   .slider-wrapper .overlayer .image::after {
     background: linear-gradient(to right, var(--natural-color), rgba(255,255,255,0.5));
+  }
+  html[dir=rtl] .carousel-indicators {
+    margin-right: initial;
   }
   .carousel-indicators{
     margin-left: initial;
@@ -2124,6 +2145,14 @@ html[dir=rtl] .newsletter .subscribe-btn {
   .footer-main-inner {
     flex-direction: column;
     align-items: center;
+  }
+  /*----------  about --> timeline  ----------*/
+  #timeline .timeline-nav .nav-item {
+      border: 5px solid var(--natural-color);
+      margin: 5px;
+  }
+  #timeline .timeline-nav-wrapper {
+      transform: translateY(-375px);
   }
 }
 @media screen and ( max-width: 575px ) {
@@ -2254,6 +2283,10 @@ html[dir=rtl] .newsletter .subscribe-btn {
   .slider-counter {
       font-size: 35px;
   }
+  /*----------  home --> Testimonial --------*/
+  .slider-nav .client-image-inner {
+      height: 360px;
+  }
   /*----------  home --> blog   --------*/
   #blog {
       padding: 50px 0;
@@ -2285,12 +2318,27 @@ html[dir=rtl] .newsletter .subscribe-btn {
   .newsletter .footer-form {
     flex-direction: column;
   }
+  html[dir=rtl] .newsletter .subscribe-input input,
   .newsletter .subscribe-input input {
       border-radius: 30px;
       margin-bottom: 15px;
   }
+  html[dir=rtl] .newsletter .subscribe-btn,
   .newsletter .subscribe-btn {
     /*width:100%;*/
     border-radius:30px;
+  }
+  /*----------  about --> timeline   --------*/
+  #timeline {
+    padding: 60px 0;
+  }
+  .timeline-image img {
+      margin: 0 auto;
+  }
+  #testimonial.about-page {
+      padding: 50px 0 40px;
+  }
+  #timeline .slick-dots button {
+      color: #7b7d7d;
   }
 }

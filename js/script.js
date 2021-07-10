@@ -184,6 +184,14 @@ $(document).ready(function () {
 		arrows:false,
 		asNavFor: '.timeline-for',
 		focusOnSelect: true,
-		
+		responsive: [
+			
+			{
+				breakpoint:992,
+				settings: {
+					slidesToShow: 3
+				}
+			}
+		]
 	});
 });
